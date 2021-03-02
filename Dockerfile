@@ -1,5 +1,6 @@
 FROM alpine:3.12 AS base
 RUN apk add curl
+RUN apk add nano
 COPY start.sh /
 RUN mkdir server \
     && chmod +x start.sh
